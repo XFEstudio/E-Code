@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XFE各类拓展</name>
+    </assembly>
+    <members>
+        <member name="T:XFE各类拓展.ArrysExtention.AI.MatrixOfArrysExtention">
+            <summary>
+            对神经网络算法的数组矩阵的拓展
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.ArrysExtention.AI.MatrixOfArrysExtention.OutPutInMatrix``1(``0[])">
+            <summary>
+            以矩阵形式打印数组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="arrays"></param>
+        </member>
+        <member name="M:XFE各类拓展.ArrysExtention.AI.MatrixOfArrysExtention.OutPutInMatrix``1(``0[][])">
+            <summary>
+            以矩阵形式打印数组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="arrays"></param>
+        </member>
+        <member name="M:XFE各类拓展.ArrysExtention.AI.MatrixOfArrysExtention.OutPutInMatrix``1(``0[0:,0:])">
+            <summary>
+            以矩阵形式打印数组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="arrays"></param>
+        </member>
+        <member name="T:XFE各类拓展.ObjectExtention.ObjectExtention">
+            <summary>
+            所有类的基类的拓展
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.ObjectExtention.ObjectExtention.ActiveCopyOf``1(``0)">
+            <summary>
+            进行浅拷贝
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <returns>浅拷贝后的对象</returns>
+            <exception cref="T:System.ArgumentNullException">无类型错误</exception>
+        </member>
+        <member name="M:XFE各类拓展.ObjectExtention.ObjectExtention.StaticCopyOf``1(``0)">
+            <summary>
+            进行静态拷贝
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <returns>静态拷贝后的对象</returns>
+        </member>
+        <member name="T:XFE各类拓展.StringExtention.Json.JsonStringExtention">
+            <summary>
+            对string类进行Json操作的扩展
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.Json.JsonStringExtention.GetStringBetweenTwoString(System.String,System.String,System.String)">
+            <summary>
+            根据给定的开头和末尾返回查找到的第一个匹配的字符串（全匹配）
+            </summary>
+            <param name="str">被匹配的字符串</param>
+            <param name="beginstr">匹配开头字符串</param>
+            <param name="endstr">匹配结尾字符串</param>
+            <returns>返回夹在开头和末尾中间的字符串</returns>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.Json.JsonStringExtention.GetTextByForm(System.String,System.String)">
+            <summary>
+            通过给定的文本格式查找对应的字段
+            </summary>
+            <param name="str">待匹配文本</param>
+            <param name="form">查找的文本格式</param>
+            <returns></returns>
+        </member>
+        <member name="T:XFE各类拓展.StringExtention.StringExtention">
+            <summary>
+            字符串拓展类
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.StringExtention.ReplaceStrings(System.String,System.String[],System.String)">
+            <summary>
+            替换字符串中的多个字符串为指定字符串
+            </summary>
+            <param name="str"></param>
+            <param name="replaceStringArray">替换的字符串组</param>
+            <param name="tarString">目的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.StringExtention.MatchStringsBetween(System.String,System.String,System.String)">
+            <summary>
+            匹配两个字符串之间的字符串
+            </summary>
+            <param name="input"></param>
+            <param name="startString">起始字符串</param>
+            <param name="endString">结束字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.StringExtention.WrapText(System.String,System.Int32)">
+            <summary>
+            文本自动换行
+            </summary>
+            <param name="text"></param>
+            <param name="width">一行文本的最大长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.StringExtention.ConsoleWriteLine(System.Object)">
+            <summary>
+            输出到控制台并返回
+            </summary>
+            <param name="obj"></param>
+            <returns>ToString后的内容</returns>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.StringExtention.SplitAndKeepDelimiter(System.String,System.String[],System.Boolean)">
+            <summary>
+            返回包含分割器的字符串
+            </summary>
+            <param name="str"></param>
+            <param name="delimiter">分割器组</param>
+            <param name="removeEmptyString">是否移除空字符串</param>
+            <returns>分割后的带分割器字符串数组</returns>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.StringExtention.SplitAndKeepDelimiter(System.String,System.String,System.Boolean)">
+            <summary>
+            返回包含分割器的字符串
+            </summary>
+            <param name="str"></param>
+            <param name="delimiter">分割器</param>
+            <param name="removeEmptyString">是否移除空字符串</param>
+            <returns>分割后的带分割器字符串数组</returns>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.StringExtention.SplitAndKeepDelimiter(System.String,System.String)">
+            <summary>
+            返回包含分割器的字符串
+            </summary>
+            <param name="str"></param>
+            <param name="delimiter">分割器</param>
+            <returns>分割后的带分割器字符串数组</returns>
+        </member>
+        <member name="M:XFE各类拓展.StringExtention.StringExtention.SplitAndKeepDelimiter(System.String,System.String[])">
+            <summary>
+            返回包含分割器的字符串
+            </summary>
+            <param name="str"></param>
+            <param name="delimiter">分割器组</param>
+            <returns>分割后的带分割器字符串数组</returns>
+        </member>
+        <member name="T:XFE各类拓展.TaskExtention.TaskExtention">
+            <summary>
+            任务的拓展
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.TaskExtention.TaskExtention.StartNewTask(System.Action)">
+            <summary>
+            新建一个任务并开始
+            </summary>
+            <param name="action"></param>
+            <returns>运行的任务</returns>
+        </member>
+        <member name="M:XFE各类拓展.TaskExtention.TaskExtention.WaitAndGetResult``1(System.Threading.Tasks.Task{``0})">
+            <summary>
+            等待任务完成
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="task"></param>
+            <returns></returns>
+        </member>
+        <member name="T:XFE各类拓展.ThreadExtention.ThreadExtention">
+            <summary>
+            线程的拓展
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.ThreadExtention.ThreadExtention.WaitThreadListComplete(System.Collections.Generic.List{System.Threading.Thread})">
+            <summary>
+            等待指定线程组的所有线程完成
+            </summary>
+            <param name="threads"></param>
+            <returns>等待任务</returns>
+        </member>
+        <member name="M:XFE各类拓展.ThreadExtention.ThreadExtention.WaitThreadListComplete(System.Collections.Generic.List{System.Threading.Thread},System.Threading.ThreadState)">
+            <summary>
+            等待指定线程组的所有线程达到指定状态
+            </summary>
+            <param name="threads"></param>
+            <param name="threadState">线程的状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:XFE各类拓展.ThreadExtention.ThreadExtention.WaitThreadComplete(System.Threading.Thread)">
+            <summary>
+            等待指定线程完成
+            </summary>
+            <param name="thread"></param>
+            <returns>等待任务</returns>
+        </member>
+        <member name="M:XFE各类拓展.ThreadExtention.ThreadExtention.WaitThreadComplete(System.Threading.Thread,System.Threading.ThreadState)">
+            <summary>
+            等待指定线程达到指定状态
+            </summary>
+            <param name="thread"></param>
+            <param name="threadState">线程的状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:XFE各类拓展.ThreadExtention.ThreadExtention.StartNewThread(System.Threading.ParameterizedThreadStart,System.Object)">
+            <summary>
+            新建一个线程并开始
+            </summary>
+            <param name="method">线程方法</param>
+            <param name="parameter">传递的参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:XFE各类拓展.ThreadExtention.ThreadExtention.StartNewThread(System.Threading.ThreadStart)">
+            <summary>
+            新建一个线程并开始
+            </summary>
+            <param name="method">线程方法</param>
+            <returns></returns>
+        </member>
+        <member name="M:XFE各类拓展.ThreadExtention.ThreadExtention.StartNewThread(System.Threading.ParameterizedThreadStart,System.Object,System.Threading.ApartmentState)">
+            <summary>
+            新建一个线程并开始
+            </summary>
+            <param name="method">线程方法</param>
+            <param name="parameter">传递的参数</param>
+            <param name="apartmentState">线程的状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:XFE各类拓展.ThreadExtention.ThreadExtention.StartNewThread(System.Threading.ThreadStart,System.Threading.ApartmentState)">
+            <summary>
+            新建一个线程并开始
+            </summary>
+            <param name="method">线程方法</param>
+            <param name="apartmentState">线程的状态</param>
+            <returns></returns>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.GenerateState">
+            <summary>
+            文本生成状态
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.GenerateState.Start">
+            <summary>
+            表示生成已经开始
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.GenerateState.Continue">
+            <summary>
+            表示生成正在进行中
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.GenerateState.End">
+            <summary>
+            表示生成已经结束
+            </summary>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.ChatGPTModel">
+            <summary>
+            ChatGPT的模型
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.gpt4">
+            <summary>
+            比任何 GPT-3.5 型号都更强大，能够执行更复杂的任务，并针对聊天进行了优化。将在发布 2 周后使用我们最新的模型迭代进行更新。
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.gpt40613">
+            <summary>
+            13 年 2023 月 3 日带有函数调用数据的快照。与gpt-4不同，此模型不会收到更新，并将在新版本发布3个月后弃用。基于gpt-4
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.gpt432k">
+            <summary>
+            功能与gpt4基本模型相同，但上下文长度是其 4 倍。将使用最新的模型迭代进行更新。基于gpt-4
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.gpt432k0613">
+            <summary>
+            13 年 2023 月 3 日的快照。与GPT-4-32K不同，此模型不会收到更新，并将在新版本发布 3 个月后弃用。基于gpt-4-32k
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.gpt3point5turbo">
+            <summary>
+            功能最强大的 GPT-3.5 型号，针对聊天进行了优化，成本仅为 .将在发布 1 周后使用最新的模型迭代进行更新。
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.gpt3point5turbo16k">
+            <summary>
+            功能与标准模型相同，但上下文是其 4 倍。
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.gpt3point5turbo0613">
+            <summary>
+            13 年 2023 月 3 日的快照。与GPT-3.5-16K不同，此模型不会收到更新，并将在新版本发布 3 个月后弃用。
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.gpt3point5turbo16k0613">
+            <summary>
+            13 年 2023 月 3 日的快照。与GPT-3.5-turbo-16k不同，此模型不会收到更新，并将在新版本发布 3 个月后弃用。
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.textdavinci003">
+            <summary>
+            可以完成任何语言任务，质量更好，输出时间更长，并且遵循一致的指令，而不是居里，巴贝奇或ADA模型。还支持一些附加功能，例如插入文本。
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.textdavinci002">
+            <summary>
+            与监督微调而不是强化学习类似的能力，但经过训练。
+            </summary>
+        </member>
+        <member name="F:XFE各类拓展.XFEChatGPT.ChatGPTModel.codedavinci002">
+            <summary>
+            针对代码完成任务进行优化的模型
+            </summary>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.ChatGPTModelExtention">
+            <summary>
+            ChatGPT模型的拓展
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.ChatGPTModelExtention.GetModelString(XFE各类拓展.XFEChatGPT.ChatGPTModel)">
+            <summary>
+            获取模型的字符串
+            </summary>
+            <param name="chatGPTModel"></param>
+            <returns></returns>
+            <exception cref="T:XFE各类拓展.XFEChatGPTException">意料之外的模型</exception>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.ChatGPTModelExtention.GetModel(System.String)">
+            <summary>
+            通过字符串获取模型
+            </summary>
+            <param name="chatGPTModel"></param>
+            <returns></returns>
+            <exception cref="T:XFE各类拓展.XFEChatGPTException">意料之外的模型</exception>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.XFEChatGPT">
+            <summary>
+            基于gpt.api.xfegzs.com开放接口的ChatGPT问答类
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.XFEChatGPT.SystemString">
+            <summary>
+            ChatGPT的系统设置，即设置ChatGPT的背景故事（类比）
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.XFEChatGPT.AskContent">
+            <summary>
+            向ChatGPT提问的内容
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.XFEChatGPT.GPTModel">
+            <summary>
+            ChatGPT的语言模型
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.XFEChatGPT.IsSelfEditData">
+            <summary>
+            设置是否为自定义数据模式
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.XFEChatGPT.StreamMode">
+            <summary>
+            流式输出（打字效果）还是一次性输出
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.XFEChatGPT.EnvironmentGPTData">
+            <summary>
+            ChatGPT的环境数据
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.SendGPTMessage(System.String)">
+            <summary>
+            向ChatGPT发送消息
+            </summary>
+            <param name="messageId">提问的消息ID，用于标识回复</param>
+            <exception cref="T:XFE各类拓展.XFEChatGPTException">远程服务器返回出错时抛出</exception>"
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.SendGPTMessage(System.String,System.String)">
+            <summary>
+            向ChatGPT发送指定消息
+            </summary>
+            <param name="messageId">提问的消息ID，用于标识回复</param>
+            <param name="askContent">提问的内容</param>
+            <exception cref="T:XFE各类拓展.XFEChatGPTException">远程服务器返回出错时抛出</exception>"
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.SendAndGetGPTResponse(System.String)">
+            <summary>
+            发送消息并获取GPT回复
+            </summary>
+            <param name="message">待发送的消息</param>
+            <returns></returns>
+        </member>
+        <member name="E:XFE各类拓展.XFEChatGPT.XFEChatGPT.XFEChatGPTMessageReceived">
+            <summary>
+            当收到ChatGPT的消息时触发
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.#ctor(XFE各类拓展.XFEChatGPT.EnvironmentGPTData)">
+            <summary>
+            从EnvironmentGPTData构造
+            </summary>
+            <param name="EnvironmentGPTData">ChatGPT环境设置</param>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.#ctor(System.String,System.String)">
+            <summary>
+            使用系统和内容构造
+            </summary>
+            <param name="systemContent">ChatGPT的系统设置，即设置ChatGPT的背景故事（类比）</param>
+            <param name="askContent">向ChatGPT提问的内容</param>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            使用系统和内容构造，可设置流式输出（打字效果）还是一次性输出
+            </summary>
+            <param name="systemContent">ChatGPT的系统设置，即设置ChatGPT的背景故事（类比）</param>
+            <param name="askContent">向ChatGPT提问的内容</param>
+            <param name="stream">设置流式输出（打字效果）还是一次性输出</param>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.#ctor(System.String)">
+            <summary>
+            使用系统构造
+            </summary>
+            <param name="systemContent">ChatGPT的系统设置，即设置ChatGPT的背景故事（类比）</param>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.#ctor(System.String,System.Boolean)">
+            <summary>
+            使用系统构造，可设置流式输出（打字效果）还是一次性输出
+            </summary>
+            <param name="systemContent">ChatGPT的系统设置，即设置ChatGPT的背景故事（类比）</param>
+            <param name="stream">设置流式输出（打字效果）还是一次性输出</param>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.#ctor(System.String,System.String,XFE各类拓展.XFEChatGPT.ChatGPTModel)">
+            <summary>
+            使用系统和内容构造，自定义模型
+            </summary>
+            <param name="systemContent">ChatGPT的系统设置，即设置ChatGPT的背景故事（类比）</param>
+            <param name="askContent">向ChatGPT提问的内容</param>
+            <param name="chatGPTModel">选用的GPT模型</param>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.#ctor(System.String,System.String,System.Boolean,XFE各类拓展.XFEChatGPT.ChatGPTModel)">
+            <summary>
+            使用系统和内容构造，可设置流式输出（打字效果）还是一次性输出，自定义模型
+            </summary>
+            <param name="systemContent">ChatGPT的系统设置，即设置ChatGPT的背景故事（类比）</param>
+            <param name="askContent">向ChatGPT提问的内容</param>
+            <param name="stream">设置流式输出（打字效果）还是一次性输出</param>
+            <param name="chatGPTModel">选用的GPT模型</param>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.#ctor(System.String,XFE各类拓展.XFEChatGPT.ChatGPTModel)">
+            <summary>
+            使用系统构造，自定义模型
+            </summary>
+            <param name="systemContent">ChatGPT的系统设置，即设置ChatGPT的背景故事（类比）</param>
+            <param name="chatGPTModel">选用的GPT模型</param>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEChatGPT.#ctor(System.String,System.Boolean,XFE各类拓展.XFEChatGPT.ChatGPTModel)">
+            <summary>
+            使用系统构造，可设置流式输出（打字效果）还是一次性输出，自定义模型
+            </summary>
+            <param name="systemContent">ChatGPT的系统设置，即设置ChatGPT的背景故事（类比）</param>
+            <param name="stream">设置流式输出（打字效果）还是一次性输出</param>
+            <param name="chatGPTModel">选用的GPT模型</param>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.XFEGPTMessageReceivedEventArgs">
+            <summary>
+            从服务器接收到的GPT消息
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.XFEGPTMessageReceivedEventArgs.message">
+            <summary>
+            消息内容
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.XFEGPTMessageReceivedEventArgs.id">
+            <summary>
+            消息接收器ID
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.XFEGPTMessageReceivedEventArgs.generateState">
+            <summary>
+            生成状态
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.XFEGPTMessageReceivedEventArgs.#ctor(System.String,System.String,XFE各类拓展.XFEChatGPT.GenerateState)">
+            <summary>
+            从服务器接收到的GPT消息
+            </summary>
+            <param name="message"></param>
+            <param name="id"></param>
+            <param name="generateState"></param>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.ReceivedGPTMessage">
+            <summary>
+            接收到的GPT消息
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.ReceivedGPTMessage.id">
+            <summary>
+            消息ID
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.ReceivedGPTMessage.Object">
+            <summary>
+            消息对象
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.ReceivedGPTMessage.created">
+            <summary>
+            消息创建时间
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.ReceivedGPTMessage.model">
+            <summary>
+            使用的GPT模型
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.ReceivedGPTMessage.usage">
+            <summary>
+            Token令牌的使用情况
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.ReceivedGPTMessage.choices">
+            <summary>
+            GPT返回的具体数据（数组的形式）
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.ReceivedGPTMessage.#ctor(System.String,System.String,System.Int64,System.String,XFE各类拓展.XFEChatGPT.TokenUsage,XFE各类拓展.XFEChatGPT.MessageChoice[])">
+            <summary>
+            接收到的GPT消息
+            </summary>
+            <param name="id"></param>
+            <param name="object"></param>
+            <param name="created"></param>
+            <param name="model"></param>
+            <param name="usage"></param>
+            <param name="choices"></param>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.MessageChoice">
+            <summary>
+            GPT消息链的组成单元
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.MessageChoice.delta">
+            <summary>
+            Delta消息（用于流式接收）
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.MessageChoice.message">
+            <summary>
+            单个消息（用于单个接收）
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.MessageChoice.finish_reason">
+            <summary>
+            结束原因
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.MessageChoice.index">
+            <summary>
+            消息索引
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.MessageChoice.#ctor(XFE各类拓展.XFEChatGPT.GPTMessage,XFE各类拓展.XFEChatGPT.GPTMessage,System.String,System.Int32)">
+            <summary>
+            GPT消息链的组成单元
+            </summary>
+            <param name="delta"></param>
+            <param name="message"></param>
+            <param name="finish_reason"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.MessageChoice.#ctor(XFE各类拓展.XFEChatGPT.GPTMessage,System.String,System.Int32)">
+            <summary>
+            GPT消息链的组成单元
+            </summary>
+            <param name="message">GPTMessage消息对象</param>
+            <param name="finish_reason">结束原因</param>
+            <param name="index">消息索引</param>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.TokenUsage">
+            <summary>
+            Token令牌的使用情况
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.TokenUsage.prompt_tokens">
+            <summary>
+            用于提示的Token令牌
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.TokenUsage.completion_tokens">
+            <summary>
+            用于完成的Token令牌
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.TokenUsage.total_tokens">
+            <summary>
+            总共使用的Token令牌
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.TokenUsage.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Token令牌的使用情况
+            </summary>
+            <param name="prompt_tokens"></param>
+            <param name="completion_tokens"></param>
+            <param name="total_tokens"></param>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.EnvironmentGPTData">
+            <summary>
+            GPT环境数据
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.EnvironmentGPTData.model">
+            <summary>
+            使用的GPT模型
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.EnvironmentGPTData.stream">
+            <summary>
+            是否为流式接收
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.EnvironmentGPTData.temperature">
+            <summary>
+            温度，此处为GPT的创造性
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.EnvironmentGPTData.messages">
+            <summary>
+            发送给GPT的消息
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.EnvironmentGPTData.#ctor(System.String,System.Boolean,System.Double,XFE各类拓展.XFEChatGPT.GPTMessage[])">
+            <summary>
+            GPT环境数据
+            </summary>
+            <param name="model"></param>
+            <param name="stream"></param>
+            <param name="temperature"></param>
+            <param name="messages"></param>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPT.GPTMessage">
+            <summary>
+            GPT消息
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.GPTMessage.role">
+            <summary>
+            角色（目前已知有：System，User和Assistant）
+            </summary>
+        </member>
+        <member name="P:XFE各类拓展.XFEChatGPT.GPTMessage.content">
+            <summary>
+            与角色对应的消息内容
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPT.GPTMessage.#ctor(System.String,System.String)">
+            <summary>
+            GPT消息
+            </summary>
+            <param name="role">角色</param>
+            <param name="content">内容</param>
+        </member>
+        <member name="T:XFE各类拓展.XFEJsonTransform.XFEJsonTransformer">
+            <summary>
+            XFEJson转换器
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEJsonTransform.XFEJsonTransformer.ConvertToJson(System.Object)">
+            <summary>
+            将对象转换为Json字符串
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+            <exception cref="T:XFE各类拓展.XFEJsonTransformException">空对象异常</exception>
+        </member>
+        <member name="T:XFE各类拓展.XFEExtentionException">
+            <summary>
+            XFE各类拓展的异常
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEExtentionException.#ctor(System.String)">
+            <summary>
+            XFE各类拓展的异常
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:XFE各类拓展.XFEJsonTransformException">
+            <summary>
+            XFEJson转换的异常
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEJsonTransformException.#ctor(System.String)">
+            <summary>
+            XFEJson转换的异常
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:XFE各类拓展.XFEChatGPTException">
+            <summary>
+            XFEChatGPT的异常
+            </summary>
+        </member>
+        <member name="M:XFE各类拓展.XFEChatGPTException.#ctor(System.String)">
+            <summary>
+            XFEChatGPT的异常
+            </summary>
+            <param name="message"></param>
+        </member>
+    </members>
+</doc>
